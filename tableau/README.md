@@ -59,8 +59,19 @@ Tableau Public Links
 Diagnostic Dashboard
 https://public.tableau.com/views/PredictiveMaintenanceAnalysisDiagnostic/PredictiveMaintenanceAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
+Diagnostic Dashboard Preview
+![Diagnostic Dashboard](diagnostic_dashboard.png)
+
+
 Leakage-Safe Dashboard
 https://public.tableau.com/views/PredictiveMaintenanceAnalysisLeakage-Safe/Leakage-SafeDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
+Leakage-Safe Dashboard Preview
+![Leakage-Safe Dashboard](leakage_safe_dashboard.png)
+
+
 Comparison Dashboard
 https://public.tableau.com/views/PredictiveMaintenance-DiagnosticvsLeakage-SafeComparison/DashboardComparison-DiagnosticvsLeakage-Safe?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
+
+Comparison Dashboard Preview
+![Comparison Dashboard](comparison_dashboard.png)
