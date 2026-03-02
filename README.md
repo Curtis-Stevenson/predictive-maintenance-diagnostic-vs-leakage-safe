@@ -52,7 +52,7 @@ Explainable Artificial Intelligence for Predictive Maintenance Applications.
 DOI: 10.1109/AI4I49448.2020.00023
 
 Kaggle Dataset:
-https://www.kaggle.com/datasets/shivamb/ai4i-2020-predictive-maintenance-dataset
+https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4i-2020
 
 The raw dataset is not included in this repository.
 To reproduce this project, download the dataset directly from Kaggle.
