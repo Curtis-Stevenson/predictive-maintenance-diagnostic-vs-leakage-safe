@@ -1,11 +1,11 @@
 # predictive-maintenance-diagnostic-vs-leakage-safe
 Predictive maintenance analysis in SQL + Tableau comparing rule-based diagnostic vs leakage-safe sensor modeling (AI4I 2020).
 
-Predictive Maintenance: Diagnostic vs Leakage-Safe Analysis
+# Predictive Maintenance: Diagnostic vs Leakage-Safe Analysis
 
-Executive Summary
+## Executive Summary
 
-This project evaluates machine failure risk using two analytical perspectives:
+ This project evaluates machine failure risk using two analytical perspectives:
 - Diagnostic (Rule-Based) Analysis aligned with predefined failure definitions
 - Leakage-Safe (Sensor-Only) Analysis using independent operational signals
 
@@ -17,9 +17,8 @@ This project demonstrates the critical difference between:
 - Compliance-based monitoring
 - Predictive risk modeling
 
-⸻
 
-Business Objective
+## Business Objective
 
 Identify operational drivers of machine failure and estimate preventable failure reduction through:
 - Maintenance optimization
@@ -27,22 +26,18 @@ Identify operational drivers of machine failure and estimate preventable failure
 - Power regulation
 - Thermal risk control
 
-⸻
-
-Dataset Overview
+## Dataset Overview
 - 10,000 machine observations
 - Synthetic milling machine dataset
 - Binary machine failure label
 - 5 deterministic failure modes:
-- Tool Wear Failure (TWF)
-- Heat Dissipation Failure (HDF)
-- Power Failure (PWF)
-- Overstrain Failure (OSF)
-- Random Failure (RNF)
+  - Tool Wear Failure (TWF)
+  - Heat Dissipation Failure (HDF)
+  - Power Failure (PWF)
+  - Overstrain Failure (OSF)
+  - Random Failure (RNF)
 
-⸻
-
-Data Source & Attribution
+## Data Source & Attribution
 
 This project uses the AI4I 2020 Predictive Maintenance Dataset:
 
@@ -57,11 +52,9 @@ https://www.kaggle.com/datasets/stephanmatzka/predictive-maintenance-dataset-ai4
 The raw dataset is not included in this repository.
 To reproduce this project, download the dataset directly from Kaggle.
 
-⸻
+## Analytical Framework
 
-Analytical Framework
-
-1) Diagnostic Dashboard (Rule-Based)
+### 1) Diagnostic Dashboard (Rule-Based)
 - Built using failure-mode aligned thresholds
 - Power zones <3500W and >9000W produce deterministic failure
 - Tool wear >200 minutes shows nonlinear risk escalation
@@ -69,9 +62,7 @@ Analytical Framework
 
 Estimated preventable failures: 30–50%
 
-⸻
-
-2) Leakage-Safe Dashboard (Sensor-Only)
+### 2) Leakage-Safe Dashboard (Sensor-Only)
 - Removes threshold-derived failure logic
 - Uses only independent sensor signals
 - Reflects probabilistic operational risk
@@ -79,9 +70,7 @@ Estimated preventable failures: 30–50%
 
 Estimated preventable failures: 15–25%
 
-⸻
-
-3) Comparison Dashboard
+### 3) Comparison Dashboard
 
 Directly contrasts:
 - Deterministic trigger zones
@@ -90,17 +79,13 @@ Directly contrasts:
 
 Demonstrates the impact of data leakage on interpretation and decision-making.
 
-⸻
-
-Key Findings
+## Key Findings
 - Tool wear risk escalates sharply beyond ~200 minutes
 - Power extremes create deterministic failures under rule logic
 - Temperature interaction contributes to elevated failure probability
 - Product type influences structural reliability patterns
 
-⸻
-
-Operational Implications
+## Operational Implications
 
 Diagnostic Controls
 - Replace tools before 200 minutes of wear
@@ -112,17 +97,13 @@ Predictive Strategy
 - Monitor power intensity distribution
 - Use multi-sensor risk scoring models
 
-⸻
-
-Technical Stack
+## Technical Stack
 - PostgreSQL (data validation & analytical views)
 - SQL (CTEs, derived fields, NTILE quartiles, aggregation)
 - Tableau Public (dashboard design & KPI storytelling)
 - GitHub (documentation & reproducibility)
 
-⸻
-
-Repository Structure
+## Repository Structure
 
 predictive-maintenance--diagnostic-vs-leakage-safe/
 
@@ -133,6 +114,7 @@ predictive-maintenance--diagnostic-vs-leakage-safe/
 │   └── predictive_maintenance_analysis.sql
 
 │
+
 
 ├── tableau/
 
@@ -148,9 +130,7 @@ predictive-maintenance--diagnostic-vs-leakage-safe/
 
 └── README.md
 
-⸻
-
-What This Project Demonstrates
+## What This Project Demonstrates
 - Manufacturing operations analytics
 - SQL feature engineering
 - Data leakage detection and mitigation
@@ -158,9 +138,7 @@ What This Project Demonstrates
 - KPI engineering for executive decision-making
 - Dashboard storytelling for operational leadership
 
-⸻
-
-Author
+## Author
 
 Curtis Stevenson
 
